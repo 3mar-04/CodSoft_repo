@@ -1,0 +1,424 @@
+main{
+    width: 90%;
+    margin: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:30% 32% 36%;
+    grid-template-rows: 350px 250px;
+    gap: 10px;
+    width: 100%;
+    grid-template-areas:
+    "photo photo news"
+    "left right news"
+}
+
+.grid .photo{
+    grid-area: photo;
+    background: url(./img/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.grid .LeftP{
+    grid-area: left;
+    background-color: white;
+}
+
+.grid .LeftP p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.grid .RightP{
+    grid-area: right;
+    background-color: white;
+}
+
+.grid .RightP p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+    padding: 25px 30px;
+    font-size: 16px;
+}
+
+.grid .RightP button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 25px;
+    padding: 10px 25px;
+    border: 0px;
+    background-color: red;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+
+.grid .news{
+    grid-area: news;
+    background-color:rgb(0, 0, 33);
+}
+
+.grid .news h1{
+    color: goldenrod;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 20px 0px;
+    font-size: 40px;
+}
+
+.grid .news .big{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.grid .news .small{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px 20px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.grid .news hr{
+    width: 85%;
+    size: 0.5px;
+}
+
+.foot{
+    margin-top: 100px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot .alt{
+    display: flex;
+    width: 31%;
+    gap: 10px;
+}
+
+.foot div .img{
+    width: 300px;
+}
+
+.foot div .img img{
+    border-radius: 5px;
+    width:200px;
+    height: 4/5;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.foot div .con h1{
+    font-size: 300%;
+    color: goldenrod;
+    padding: 10px 10px;
+    margin: 0%;
+}
+
+.foot div .con h2{
+    margin: 0%;
+    padding: 0%;
+    font-size:200%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.foot div .con p{
+    font-size:100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width:921px){
+
+    .grid{
+        grid-template-rows: 350px 220px;
+
+    }
+    .grid .LeftP p{
+        font-size: 35px;
+    }
+
+    .grid .RightP p{
+        font-size: 13px;
+    }
+    .grid .RightP button{
+        margin: 0px 25px;
+        font-size: 14px;
+    }
+    .grid .news h1{
+        color: goldenrod;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px 20px 0px;
+        font-size: 40px;
+    }
+    
+    .grid .news .big{
+        font-size: 18px;
+    }
+    .grid .news .small{
+        font-size: 11px;
+    }
+}
+
+
+
+@media (max-width:786px) {
+    .grid{
+        margin: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px 200px 220px auto;
+        grid-template-areas:
+        "photo photo"
+        "left left"
+        "right right"
+        "news news";
+    }
+
+    .grid .photo{
+        grid-area: photo;
+        margin-left:2.5%;
+        width: 95%;
+        background: url(./img/image-web-3-mobile.jpg);
+        background-position: 50% 50%;
+    }
+
+    .grid .LeftP p{
+    font-size: 60px;
+        padding-bottom: 0px;
+    }
+
+    .grid .RightP p{
+    font-size: 23px;
+    padding-top: 0px;
+    }
+
+    .grid .RightP button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 30px;
+    padding: 20px 45px;
+    font-size: 22px;
+}
+.grid .news{
+    grid-area: news;
+    background-color:rgb(0, 0, 33);
+    margin-top: 30px;
+}
+
+.grid .news h1{
+    padding-left: 40px;
+    font-size: 60px;
+}
+
+.grid .news .big{
+    padding-left: 40px;
+    font-size: 35px;
+}
+
+.grid .news .small{
+    padding-left: 40px;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.foot{
+    display: flex;
+    justify-content: flex-start;
+    
+    flex-direction: column;
+}
+
+.foot .alt{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    gap: 10px;
+    height: 200px;
+}
+
+
+.foot .alt .img img{
+    border-radius: 5px;
+    width:150px;
+    height: 4/5;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.foot .alt .con h1{
+    font-size: 250%;
+    color: goldenrod;
+    padding: 10px 0px;
+    margin: 0%;
+}
+
+.foot .alt .con h2{
+    margin: 0%;
+    padding: 0%;
+    font-size:120%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.foot .alt .con p{
+    font-size:75%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+}
+
+@media (max-width:570px) {
+    .grid{
+        margin: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px 170px 180px auto;
+        grid-template-areas:
+        "photo photo"
+        "left left"
+        "right right"
+        "news news";
+    }
+
+    .grid .photo{
+        grid-area: photo;
+        margin-left:2.5%;
+        width: 95%;
+        background: url(./img/image-web-3-mobile.jpg);
+        background-position: 50% 50%;
+    }
+
+    .grid .LeftP p{
+    font-size: 45px;
+        padding-bottom: 0px;
+    }
+
+    .grid .RightP p{
+    font-size: 18px;
+    padding-top: 0px;
+    }
+
+    .grid .RightP button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 30px;
+    padding: 15px 35px;
+    font-size: 20px;
+}
+.grid .news{
+    grid-area: news;
+    background-color:rgb(0, 0, 33);
+}
+
+.grid .news h1{
+    padding-left: 40px;
+    font-size: 50px;
+}
+
+.grid .news .big{
+    padding-left: 40px;
+    font-size: 28px;
+}
+
+.grid .news .small{
+    padding-left: 40px;
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+}
+
+@media (max-width:1350px){
+    .foot div .img img{
+        border-radius: 5px;
+        width:150px;
+        height: 4/5;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+    
+    .foot div .con h1{
+        font-size: 200%;
+        color: goldenrod;
+        padding: 10px 10px;
+        margin: 0%;
+    }
+    
+    .foot div .con h2{
+        margin: 0%;
+        padding: 0%;
+        font-size:130%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .foot div .con p{
+        font-size:75%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+@media (max-width:1050px){
+    .foot div .img img{
+        border-radius: 5px;
+        width:135px;
+        height: 4/5;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+    
+    .foot div .con h1{
+        font-size: 150%;
+        color: goldenrod;
+        padding: 10px 10px;
+        margin: 0%;
+    }
+    
+    .foot div .con h2{
+        margin: 0%;
+        padding: 0%;
+        font-size:100%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .foot div .con p{
+        font-size:70%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+@media (max-width:950px){
+    .foot div .img img{
+        border-radius: 5px;
+        width:120px;
+        height: 4/5;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+    
+    .foot div .con h1{
+        font-size: 120%;
+        color: goldenrod;
+        padding: 10px 10px;
+        margin: 0%;
+    }
+    
+    .foot div .con h2{
+        margin: 0%;
+        padding: 0%;
+        font-size:80%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .foot div .con p{
+        font-size:65%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+

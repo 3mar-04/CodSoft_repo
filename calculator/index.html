@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <input class="display" id="display" readonly />
+        <button class="fun" onclick="Clear()">C</button>
+        <button class="fun" onclick="Delete()">DE</button>
+        <button class="fun" onclick="Append('%')">%</button>
+        <button class="fun" onclick="Append('/')">/</button>
+        <button class="num" onclick="Append('7')">7</button>
+        <button class="num" onclick="Append('8')">8</button>
+        <button class="num" onclick="Append('9')">9</button>
+        <button class="fun" onclick="Append('*')">x</button>
+        <button class="num" onclick="Append('4')">4</button>
+        <button class="num" onclick="Append('5')">5</button>
+        <button class="num" onclick="Append('6')">6</button>
+        <button class="fun" onclick="Append('-')">-</button>
+        <button class="num" onclick="Append('1')">1</button>
+        <button class="num" onclick="Append('2')">2</button>
+        <button class="num" onclick="Append('3')">3</button>
+        <button class="fun" onclick="Append('+')">+</button>
+        <button class="num" onclick="Append('00')">00</button>
+        <button class="num" onclick="Append('0')">0</button>
+        <button class="fun" onclick="Append('.')">.</button>
+        <button class="fun" onclick="Result()">=</button>
+      </div>
+    </main>
+    <script src="./Scrpt.js"></script>
+  </body>
+</html>

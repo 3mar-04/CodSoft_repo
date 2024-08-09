@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(36, 36, 36);
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: rgb(52, 52, 52);
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0%;
+    max-width: 550px;
+    aspect-ratio: 2/3;
+    border: 5px solid rgb(63 , 63, 63) ;
+    box-shadow: 5px 0px  90px 0.6px rgb(52, 52, 52);
+    
+    
+}
+
+.container .display {
+    width:100%;
+    aspect-ratio: 8/2;
+    background-color: rgb(63, 63, 63);
+    border: 0cap;
+    margin-bottom: 20px;
+    font-size: 200%;
+    padding-left:30px;
+    margin: 0%;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.container button {
+    width: 18%;
+    aspect-ratio: 1/1;
+    font-size: 2em;
+    padding: 5px;
+    border-radius: 50%;
+    border: 0cap;
+    margin: 3%;
+}
+
+.fun{
+    background-color: rgb(255, 166, 0);
+    color: whitesmoke;
+}
+
+.fun:hover{
+    background-color: rgba(255, 166, 0, 0.724);
+}
+.fun:active{
+    background-color: rgba(255, 166, 0, 0.522);
+}
+
+.num{
+    background-color: rgb(77, 77, 77);
+    color: whitesmoke;
+}
+
+.num:hover{
+    background-color: rgba(77, 77,77, 0.724);
+}
+.num:active{
+    background-color: rgba(77, 77, 77, 0.522);
+}
+
+@media (max-width:500px){
+    .container{
+        aspect-ratio: 5/8;
+    }
+   .container button{
+    width: 17%;
+    margin-left: 3%;
+    font-size: 170%;
+}
+}
+@media (max-width:350px){
+    .container{
+        aspect-ratio: 5/8;
+    }
+   .container button{
+    width: 17%;
+    margin-left: 3%;
+    font-size: 170%;
+}
+}
